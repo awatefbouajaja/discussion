@@ -1,12 +1,15 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-   
-<h1>chat with user</h1>
+
+ <div class="write_msg" style="margin-left: 20%;margin-top: 10%;">
+<h1 >chat with user</h1>
 <ul id="chat-list"></ul>
-<hr>
-<textarea id="form-message" placeholder="write message here"></textarea>
-<input type="button" id="form-submit" value="Send message"/>
+
+<!--<textarea id="form-message" placeholder="write message here"></textarea>-->
+<input type="text" class="write_msg" placeholder="Type a message" id="form-message" />
+<input type="button" id="form-submit" value="Send message" class="btn "/>
+</div>
 
 <script>
     // This object will be sent everytime you submit a message in the sendMessage function.
